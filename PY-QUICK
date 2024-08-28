@@ -1,0 +1,141 @@
+1.    KEYWORDS  = Keywords are reserved words in Python that have special meanings and cannot be used as identifiers 
+SOME OF THE IMPORTANT KEYWORDS ARE :
+False: Boolean false value.
+True: Boolean true value.
+None: Represents the absence of a value or a null value.
+if, else, elif: Used for conditional statements.
+for, while: Used for loops.
+break, continue: Used to control the flow of loops.
+def: Defines a function.
+return: Returns a value from a function.
+class: Defines a class.
+try, except, finally: Used for exception handling.
+import: Imports a module.
+from: Imports specific parts of a module
+
+  2.   VARIABLE = Variables are used to store data that can be used and manipulated in a program
+EX. x = 10, here x is variable and1 10 is the value stored inside it 
+
+   3.  DATA TYPES-
+Numbers: Integers (int), floating-point numbers (float), and complex numbers (complex).
+Strings: Text data, defined using quotes.
+Lists: Ordered, mutable collections of items.
+Tuples: Ordered, immutable collections of items.
+Sets: Unordered collections of unique items.
+Dictionaries: Unordered collections of key-value pairs
+
+   4. LISTS = A list is a collection of items that are ordered and changeable. Lists are written with square brackets.
+fruits = ["apple", "banana", "cherry"]
+to access one of them, here is the code- 
+print(fruits[0])  # Output: apple
+
+   5. TUPLES = A tuple is a collection of items that are ordered and immutable. Tuples are written with round brackets.
+coordinates = (10.0, 20.0)
+print(coordinates[0])  # Output: 10.0
+
+   6. SETS = A set is a collection of items that are unordered and unindexed. Sets are written with curly brackets.
+unique_numbers = {1, 2, 3, 4, 5}
+print(unique_numbers)  # Output: {1, 2, 3, 4, 5}
+
+  7. DICTIONARIES = A dictionary is a collection of key-value pairs that are unordered, changeable, and indexed. Dictionaries are written with curly brackets.
+person = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"                                                                                                 
+}
+print(person["name"])  # Output: John
+
+  8.CONDITIONAL STATEMENTS = Conditional statements are used to perform different actions based on different conditions.
+x = 10
+if x > 0:
+    print("x is positive")
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is negative")
+output will be = "x is positive ,bcz x is greater than 0"
+
+  9. LOOPS = Loops are used to iterate over a sequence (like a list, tuple, dictionary, set, or string).
+FOR LOOP = ITERATE OVER A SEQUENCE
+for fruit in fruits:
+    print(fruit)
+output-
+APPLE
+BANANA
+CHERRY
+    While Loop: Repeats as long as a condition is true.
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+output :
+1
+2
+3
+4
+5
+
+    10.FUNCTIONS = Functions are blocks of code that are executed when they are called. You can pass data, known as parameters, into a function.
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))  # Output: Hello, Alice!
+
+def greet():
+    a = str(input('ENTER YOUR NAME: '))
+    print("hello master",a)
+
+greet()    
+
+try:
+    b = input('ENTER YOUR PASSWORD TO ACCESS: ')
+    c = len(b)
+    if c > 10:
+        print('THE PASSWORD LENGTH IS LONG')
+    elif c < 8:
+        print('THE PASSWORD IS TOO SMALL')
+    else:
+        print('THE PASSWORD IS STRONG')
+except IndexError:
+    print('THE PASSWORD IS NOT SUITABLE')   
+    
+
+    11.CLASSES AND OBJECTS = Python is an object-oriented programming language. Almost everything in Python is an object, with its properties and methods. A class is like a blueprint for creating objects
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+
+person1 = Person("Alice", 30)
+print(person1.greet())  # Output: Hello, my name is Alice and I am 30 years old.
+
+    12.MODULES AND PACKAGES = Modules are files containing Python code. A module can define functions, classes, and variables. A package is a collection of modules.
+# Importing a module
+import math
+print(math.sqrt(16))  # Output: 4.0
+
+# Importing specific parts from a module
+from math import pi
+print(pi)  # Output: 3.141592653589793
+
+   13.Exception Handling = Exceptions are errors that occur during the execution of a program. They can be handled using try-except blocks
+try:
+    d = int(input('ENTER YOUR MOBILE NUMBER: '))
+except ValueError:
+    print('Please enter valid values!!')
+
+   14.FILE HANDLING = Python provides built-in functions for reading and writing files.
+# Writing to a file
+with open("example.txt", "w") as file:
+    file.write("Hello, World!")
+#here "w" refers to write mode                                                                                                                                                                
+ 
+# Reading from a file
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)  # Output: Hello, World!
+#here "r" refers to read mode
+ 
