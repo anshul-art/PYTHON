@@ -57,6 +57,7 @@ output will be = "x is positive ,bcz x is greater than 0"
 
   9. LOOPS = Loops are used to iterate over a sequence (like a list, tuple, dictionary, set, or string).
 FOR LOOP = ITERATE OVER A SEQUENCE
+fruits = ['APPLE','BANANA','CHERRY']
 for fruit in fruits:
     print(fruit)
 output-
