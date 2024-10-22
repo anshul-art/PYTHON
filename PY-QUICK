@@ -34,8 +34,8 @@ coordinates = (10.0, 20.0)
 print(coordinates[0])  # Output: 10.0
 
    6. SETS = A set is a collection of items that are unordered and unindexed. Sets are written with curly brackets.
-unique_numbers = {1, 2, 3, 4, 5}
-print(unique_numbers)  # Output: {1, 2, 3, 5 , 4, 5,} only unique values
+unique_numbers = {1, 2, 3, 5, 4, 5}
+print(unique_numbers)  # Output: {1, 2, 3, 4, 5,} only unique values
                                                                       WE CAN PERFORM VARIOUS OPERATIONS WITH SETS
 #1 UNIQUE VALUES
    Man_score = {1,3,5,2,7,8,9}
@@ -92,7 +92,7 @@ CHERRY
     While Loop: Repeats as long as a condition is true.
 count = 0
 while count < 5:
-    print(count)
+    print(count)0
     count += 1
 output :
 1
